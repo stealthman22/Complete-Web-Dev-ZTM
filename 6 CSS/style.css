@@ -2,12 +2,9 @@ body {
     background-image: url('img/branch-bunch-cluster-2161935.jpg');
     background-size: cover;
     color: white;
-
 }
 
-
 h2 {
-
     text-align: center;
     border: 5px dashed purple;
     cursor: pointer;
@@ -21,3 +18,18 @@ li {
 a {
     color: white;
 }
+
+img {
+    float: right;
+}
+
+h2 {
+    clear: both;
+    text-align: center;
+}
+
+
+/*
+*: all elements.
+
+*/
