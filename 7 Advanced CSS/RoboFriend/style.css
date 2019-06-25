@@ -33,6 +33,8 @@ h1 {
     width: 300px;
     height: 150px;
     display: flex;
+    margin: 0 auto;
+    /* Can center an item. */
 }
 
 .left_arm,
@@ -46,8 +48,16 @@ h1 {
     margin-right: 10px;
 }
 
+.left_arm:hover {
+    transform: rotate(330deg);
+}
+
 .right_arm {
     margin-left: 10px;
+}
+
+.right_arm:hover {
+    transform: rotate(330deg);
 }
 
 .torso {
@@ -57,9 +67,10 @@ h1 {
 }
 
 .lower_body {
+    display: flex;
     width: 200px;
     height: 200px;
-    /* This is another useful property. Hmm what do you think it does?*/
+    /* This is another useful property. Hmm what do you think it does? Evenly share space between margins left and right*/
     margin: 0 auto;
 }
 
@@ -83,7 +94,15 @@ h1 {
 }
 
 .right_leg {
-    margin-left: 30px;
+    margin-left: 45px;
+}
+
+.right_leg:hover {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(-20deg);
 }
 
 .left_eye,
@@ -104,6 +123,6 @@ h1 {
 
 .right_eye {
     position: relative;
-    top: 100px;
+    top: 80px;
     left: 120px;
 }
