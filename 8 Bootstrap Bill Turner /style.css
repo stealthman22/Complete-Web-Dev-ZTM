@@ -1,0 +1,11 @@
+/* Changing custom bootstrap properties */
+
+html,
+body {
+    margin-top: 20px;
+}
+
+.col {
+    background-color: grey;
+    border: 2px solid black;
+}
