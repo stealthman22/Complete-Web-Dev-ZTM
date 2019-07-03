@@ -8,6 +8,14 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+a {
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 .container {
     background: url("https://res.cloudinary.com/stealthman22/image/upload/v1524956013/header_space.jpg") no-repeat center center/cover;
     width: 100vw;
