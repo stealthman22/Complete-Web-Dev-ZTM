@@ -1,0 +1,18 @@
+Variables help the programming language remember things.
+They must start with a letter.
+Can also start with a _ $
+Always use camel cases
+prompt() automatically changes it's input to string.
+Number(Variable) converts the Variable to a number.
+Variables can hold any javascript types.
+; means the end of an expression (a fragment of code that produces a value);
+You can reassign a new value to a Variable.
+undefined is also a type. It could mean a value is not present.
+Conditional executuion requires control flow.
+if else statements are the  building blocks of Conditionals.
+Logical operators:
+|| or  
+&& and 
+! not
+A variable cannot hold 2 values (using logical and &&), but can equate to two values (using logical or ||)
+! simply converts an expression or value to the direct opposite of itself.
