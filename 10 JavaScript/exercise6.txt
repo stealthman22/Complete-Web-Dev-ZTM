@@ -16,6 +16,22 @@
 you should have at the end:
 ["Kiwi", "Oranges", "Blueberries"]
 
+
+// solutions
+
+var array = ["Banana", "Apples", "Oranges", "Blueberries"];
+
+array.sort();
+
+array.push('kiwi');
+
+array.shift();
+
+array.reverse();
+
+
+
 // using this array,
 // var array2 = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
 // access "Oranges".
+array2[1][1];

@@ -1,4 +1,4 @@
-// using this array, 
+s // using this array, 
 var array = ["Banana", "Apples", "Oranges", "Blueberries"];
 
 // 1. Remove the Banana from the array.

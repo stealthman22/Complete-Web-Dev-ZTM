@@ -5,5 +5,17 @@
 // 3. Prompts the user for the second number.
 // 4. stores that number and responds with the SUM by using an alert.  
 
+var first = prompt('Enter first number');
+var second = prompt('Enter second number');
+var sum = Number(first) + Number(second);
+var sumB = Number(second) - Number(first);
+
+if(sum > 80) { 
+	alert('The total is ' + sumB) ;
+} else {
+alert('The total is ' + sum)
+}
+
 
 // BONUS: Make a program that can subtract, multiply, and also divide!
+
