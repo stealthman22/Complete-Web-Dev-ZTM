@@ -56,3 +56,26 @@ var mixedList = [
 ];
 
 console.log(mixedList[0][3]); */
+
+// Objects
+
+/* var user = {
+    name: 'John',
+    age: '34',
+    hobby: 'Soccer',
+    isMarried: 'false',
+    spells: ['abrakadabra', 'shazam', 'boo'],
+    shout: function() {
+        console.log('shouting out louddddddddddddd');
+    }
+}
+
+var list = [{
+        username: 'andy',
+        password: 'secret'
+    },
+    {
+        username: 'jess',
+        password: '12345'
+    }
+] */

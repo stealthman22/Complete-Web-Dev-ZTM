@@ -34,4 +34,6 @@ array.reverse();
 // using this array,
 // var array2 = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
 // access "Oranges".
+
+//solution
 array2[1][1];
