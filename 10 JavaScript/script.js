@@ -79,3 +79,85 @@ var list = [{
         password: '12345'
     }
 ] */
+
+
+// Loops
+
+// for loops
+
+var todo = [
+    'clean room',
+    'brush teeth',
+    'exercise',
+    'study javascript',
+    'eat healthy'
+];
+
+// This will allow the pop of all items.
+var todoLength = todo.length;
+
+// Looping to add ! to all todo items
+for (let i = 0; i < todoLength; i++) {
+    // todo[i] = todo[i] + '!';
+    //pop will stop halfway through cos the length keeps updating
+    todo.pop();
+
+}
+
+// while loop
+/* var counterOne = 10;
+while (counterOne > 10) {
+    console.log('while', counterOne);
+    counterOne--
+} */
+
+// do while
+/* 
+var counterTwo = 10;
+do {
+    console.log('do while', counterTwo);
+    counterTwo--;
+
+} while (counterTwo > 10); */
+
+// For Each method
+
+
+var todo = [
+    'clean room',
+    'brush teeth',
+    'exercise',
+    'study javascript',
+    'eat healthy'
+];
+
+var todoImportant = [
+    'clean room!',
+    'brush teeth!',
+    'exercise!',
+    'study javascript!',
+    'eat healthy!'
+];
+
+// This will allow the pop of all items.
+var todoLength = todo.length;
+
+// Looping to add ! to all todo items
+for (let i = 0; i < todoLength; i++) {
+    // console.log(todo[i], i);
+
+}
+
+/* todo.forEach((todo, i) => {
+    console.log(todo, i);
+}); */
+
+// or
+
+// This func can now be used in in any forEach
+function logTodo(todo, i) {
+    console.log(todo, i)
+}
+
+todo.forEach(logTodo);
+todoImportant.forEach(logTodo)
