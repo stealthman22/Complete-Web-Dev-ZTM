@@ -17,7 +17,7 @@ var newsFeed = [{
     }
 ]
 
-var userNamePrompt = prompt('Please entr your user name \u{1F60A}');
+var userNamePrompt = prompt('Please enter your user name \u{1F60A}');
 var passwordPrompt = prompt('Please enter your password   \u{1F47E}');
 
 
