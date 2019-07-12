@@ -1,0 +1,33 @@
+DOM Selectors
+--------------
+getElementsByTagName // Selects html tags.
+
+getElementsByClassName // Selects all elements with a classList.
+
+getElementById // Selects an Id only one.
+
+querySelector // Selects single item of a kind.
+
+querySelectorAll // Selects all items of a kind
+
+getAttribute  // Add to a selector to grab a particular getAttribute.
+
+setAttribute // You can edit an attribute, by selecting it and passing a new argument as the new value.
+
+##Changing Styles
+style.{property} //ok
+
+className //best
+classList //best
+
+classList.add
+classList.remove
+classList.toggle
+
+##Bonus
+innerHTML //DANGEROUS
+
+parentElement
+children
+
+##It is important to CACHE selectors in variables
