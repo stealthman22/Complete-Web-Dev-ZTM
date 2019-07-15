@@ -6,16 +6,33 @@ var lists = document.querySelectorAll('.listMenu > li');
 
 // Create list buttons
 
+
+
+// append btn
+
+
 var btn = document.createElement('button');
 btn.appendChild(document.createTextNode('Del'));
 
 
-//lists.forEach(list => list.appendChild(btn));
+ul.appendChild(btn);
 
 btn.classList.add('btn');
 
+//lists.forEach(list => list.appendChild(btn));
 
-console.log(btn)
+console.log(btn);
+
+
+function appendButton() {
+    for (let i = 0; i < lists.length; i++) {
+        lists.forEach(list => list.appendChild(btn));
+    }
+}
+
+appendButton();
+
+
 
 function inputLength() {
     return input.value.length;
