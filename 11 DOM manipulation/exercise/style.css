@@ -27,3 +27,7 @@ li {
 .btn {
     border-radius: 80%;
 }
+
+.delete {
+    display: none;
+}

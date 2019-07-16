@@ -1,36 +1,50 @@
 var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
-var lists = document.querySelectorAll('.listMenu > li');
+var lists = document.querySelectorAll('.listMenu > span');
+var btns = document.querySelectorAll('.listMenu > button');
 
 
 // Create list buttons
 
 
 
-// append btn
+// append btns
 
 
-var btn = document.createElement('button');
-btn.appendChild(document.createTextNode('Del'));
 
 
-ul.appendChild(btn);
 
-btn.classList.add('btn');
+/* 
+for (let i = 0; i < btns; i++) {
 
-//lists.forEach(list => list.appendChild(btn));
+    var btns = document.createElement('button');
+    btns.appendChild(document.createTextNode('Del'));
+    btns.classList.add('btn');
+    ul.appendChild(btns);
+    console.log(btns);
+    lists.appendChild(btns);
 
-console.log(btn);
+
+} */
 
 
-function appendButton() {
+
+//ul.appendChild(btns);
+
+
+
+//lists.forEach(list => list.appendChild(btns));
+
+
+
+/* function appendButton() {
     for (let i = 0; i < lists.length; i++) {
-        lists.forEach(list => list.appendChild(btn));
+        x.map(list => list.appendChild(btns));
     }
 }
 
-appendButton();
+appendButton(); */
 
 
 
@@ -50,7 +64,7 @@ function createListElement() {
     // Adds the item class to dynamically created li
     li.classList.add('items');
 
-    li.appendChild(btn);
+    li.appendChild(btns);
 
     // Add event listener
     li.addEventListener('click', () => {
@@ -74,8 +88,12 @@ function addListAfterKeypress(event) {
 }
 
 function toggleDone() {
-    console.log(this)
+
     this.classList.toggle('done');
+}
+
+function deleteItem(e) {
+    console.log(e);
 }
 
 
@@ -88,4 +106,6 @@ button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
 
-lists.forEach(list => list.addEventListener('click', toggleDone))
+lists.forEach(list => list.addEventListener('click', toggleDone));
+
+btns.forEach(btn => btn.addEventListener('click', deleteItem));
