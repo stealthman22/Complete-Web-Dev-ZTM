@@ -1,58 +1,14 @@
 var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
-var lists = document.querySelectorAll('.listMenu > span');
-var btns = document.querySelectorAll('.listMenu > button');
-
-
-// Create list buttons
-
-
-
-// append btns
-
-
-
-
-
-/* 
-for (let i = 0; i < btns; i++) {
-
-    var btns = document.createElement('button');
-    btns.appendChild(document.createTextNode('Del'));
-    btns.classList.add('btn');
-    ul.appendChild(btns);
-    console.log(btns);
-    lists.appendChild(btns);
-
-
-} */
-
-
-
-//ul.appendChild(btns);
-
-
-
-//lists.forEach(list => list.appendChild(btns));
-
-
-
-/* function appendButton() {
-    for (let i = 0; i < lists.length; i++) {
-        x.map(list => list.appendChild(btns));
-    }
-}
-
-appendButton(); */
+var lists = document.querySelectorAll('.listMenu > li');
+console.log(lists);
 
 
 
 function inputLength() {
     return input.value.length;
 }
-
-
 
 
 
@@ -64,7 +20,7 @@ function createListElement() {
     // Adds the item class to dynamically created li
     li.classList.add('items');
 
-    li.appendChild(btns);
+
 
     // Add event listener
     li.addEventListener('click', () => {
@@ -92,9 +48,24 @@ function toggleDone() {
     this.classList.toggle('done');
 }
 
-function deleteItem(e) {
-    console.log(e);
+
+function createButton() {
+    var btn = document.createElement('button');
+    btn.appendChild(document.createTextNode('Del'));
+
+    btn.classList.add('btn');
+
+
+    console.log(btn);
+
+
 }
+
+
+
+lists.forEach(() => {
+    createButton();
+});
 
 
 
@@ -107,5 +78,3 @@ button.addEventListener("click", addListAfterClick);
 input.addEventListener("keypress", addListAfterKeypress);
 
 lists.forEach(list => list.addEventListener('click', toggleDone));
-
-btns.forEach(btn => btn.addEventListener('click', deleteItem));
