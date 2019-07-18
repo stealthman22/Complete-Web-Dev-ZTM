@@ -2,7 +2,12 @@ var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
 var lists = document.querySelectorAll('.listMenu > li');
+
+//var bigLists = Array.from(document.querySelectorAll('.listMenu > li'));
 console.log(lists);
+//Created buttons
+
+
 
 
 
@@ -22,11 +27,18 @@ function createListElement() {
 
 
 
+
+
     // Add event listener
     li.addEventListener('click', () => {
         li.classList.toggle('done');
         console.log('click');
+
+
     })
+
+
+
 
 
 }
@@ -49,8 +61,10 @@ function toggleDone() {
 }
 
 
+
 function createButton() {
     var btn = document.createElement('button');
+
     btn.appendChild(document.createTextNode('Del'));
 
     btn.classList.add('btn');
@@ -63,8 +77,11 @@ function createButton() {
 
 
 
+
 lists.forEach(() => {
     createButton();
+
+
 });
 
 
