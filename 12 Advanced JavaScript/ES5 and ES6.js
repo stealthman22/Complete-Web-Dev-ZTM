@@ -41,7 +41,7 @@ const obj = {
 }
 
 
-cosnt a = 'simon';
+const a = 'simon';
 const b = true;
 const c = {};
 
