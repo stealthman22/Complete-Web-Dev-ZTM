@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+</head>
+
+<body>
+    <ul>
+        <li>Erster Eintrag</li>
+        <li>Zweiter Eintrag</li>
+        <li>Dritter Eintrag</li>
+    </ul>
+
+    <script>
+        const lis = document.querySelectorAll('li')
+        const arrayOfLis = [...lis]
+
+        function createBtn() {
+            arrayOfLis.map(document.createElement(button))
+        }
+
+        console.log(Array.isArray(lis))
+        console.log(Array.isArray(arrayOfLis))
+
+        console.log(lis);
+        console.log(arrayOfLis);
+    </script>
+
+</body>
+
+</html>
