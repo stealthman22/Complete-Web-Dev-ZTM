@@ -35,13 +35,23 @@ Object.entries(obj).forEach(value => {
 })
 
 
+
+let obj = {
+    username0: 'Santa',
+    username1: 'Rogue',
+    username2: 'Baller'
+}
+
 // Replacing the content of the key forthe items 
 //   user0: 'Santa', becomes Santa0
 Object.entries(obj).map(value => {
-    return value[1] + value[0].replace('user', '');
+    // return the second item in the array (index of 1)
+    // then grab the first items, index 0
+    // this joins the leftovers behind th evalue, and uses traditional indexes as keys
+    return value[1] + value[0].replace('username', '');
 })
 
 
-
+// When Looping over arrays with the keys, values, and enteries methods, 0 means the key of the item, while 1 means the value of the item.
 
 // Async Await
