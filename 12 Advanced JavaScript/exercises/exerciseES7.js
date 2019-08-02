@@ -46,3 +46,6 @@ This simply means 1 to the power of 300
 exponent(10000);
 
 // Infinity
+/* 
+Maybe because it has passed the number limit accepted by the js compiler.
+*/
