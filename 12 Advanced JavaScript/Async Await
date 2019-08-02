@@ -1,0 +1,4 @@
+Note: ES9 + ES8 Async Await
+Async Await is an advanced feature of Javascript that is better learned after you have an understanding of asynchronous javascript. We cover these topics in an upcoming video in this section titled How Javascript Works as well as in the HTTP + AJAX + JSON + Asynchronous Javascript section. The Async Await video is there since you will understand it better once you are in that part of the course. If you would like, you can jump there and watch the video now, but I recommend the video flow in the order that I have set up the course!
+
+There is also the new ES9 (ES2018) features that have come out which require a bit more asynchronous knowledge on our part so these new feature videos will be introduced in that same section as well.
