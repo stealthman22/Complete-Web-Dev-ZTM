@@ -42,7 +42,7 @@ let obj = {
     username2: 'Baller'
 }
 
-// Replacing the content of the key forthe items 
+// Replacing the content of the key for the items 
 //   user0: 'Santa', becomes Santa0
 Object.entries(obj).map(value => {
     // return the second item in the array (index of 1)
