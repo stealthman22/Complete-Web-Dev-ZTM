@@ -3,8 +3,11 @@ const a = 1;
 
 // call stack
 console.log('1');
+<<<<<<< HEAD
 
 // if this was an extremely large task, it can block that of 3, due to javascript's synchronous nature.
+=======
+>>>>>>> 1b33c894ff829abee9db78ae25eae50bb502a0c2
 console.log('2');
 console.log('3');
 
@@ -16,6 +19,7 @@ const one = () => {
     }
     two();
 }
+<<<<<<< HEAD
 
 
 
@@ -73,3 +77,6 @@ callback()
 element.addEventListener('click', () => {
     console.log('click');
 })
+=======
+one();
+>>>>>>> 1b33c894ff829abee9db78ae25eae50bb502a0c2
