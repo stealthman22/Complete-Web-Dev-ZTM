@@ -33,3 +33,9 @@ import {
 
 //or
 import add from './add' // for default
+
+
+// ES 6  + webpack is industry standard
+// ES6 modules are asynchronous
+// Takes 3 stages:
+// Construction, instantiation and Evaluation.
