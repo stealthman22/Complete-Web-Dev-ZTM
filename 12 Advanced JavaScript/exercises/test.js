@@ -11,6 +11,9 @@ Question 3: Write a function that converts HEX to RGB. Then Make that function a
 
 
 // Sol 1
+// Expected output
+// [[1,1,1,1],[2,2,2], 4,5,10,[20,20], 391, 392,591]
+
 
 let roughArray = [1, 2, 4, 591, 392, 391, 2, 5, 10, 2, 1, 1, 1, 20, 20];
 
@@ -35,4 +38,100 @@ const cleanArray = roughArray.reduce((acc, num) => {
 cleanArray(); */
 
 
-const cleanArray = roughArray.reduce((acc, num, index, ))
+//const cleanArray = roughArray.reduce((acc, num, index, ))
+
+
+//const sortArray = roughArray.map((a, b) => roughArray.sort(a - b));
+
+let sortArray = roughArray.sort((a, b) => {
+    return a - b
+})
+
+let pushArray = sortArray.reduce((acc, num) => {
+
+    return acc.concat(num)
+}, [])
+
+
+
+/* 
+let start = [1, 2, 4, 591, 392, 391, 2, 5, 10, 2, 1, 1, 1, 20, 20, '2', '3'];
+let strings = start.filter(v => typeof(v) === 'string');
+let notStrings = start.filter(v => typeof(v) !== 'string');
+let sortedNotStrings = notStrings.sort((a,b) => a > b);
+let grouped = sortedNotStrings.reduce((acc, value) =>
+{
+  if(acc.length > 0)
+  {
+    if(acc[0][0] === value)
+    {
+      acc[0].push(value);
+    }
+    else
+    {
+      acc.unshift([value]);
+    }
+  }
+  else
+  {
+    acc.unshift([value]);
+  }
+  return acc;
+}, []);
+
+let sortedGrouped = grouped.sort((g1, g2) => g1[0] > g2[0]);
+let withStrings = [sortedGrouped, strings];
+
+console.log(withStrings);
+
+let lonelySingleItems = sortedGrouped.map(arr => arr.length > 1 ? arr : arr[0]);
+
+console.log([lonelySingleItems, strings]);
+
+*/
+
+
+
+let start = [1, 2, 4, 591, 392, 391, 2, 5, 10, 2, 1, 1, 1, 20, 20, '2', '3'];
+let strings = start.filter(v => typeof(v) === 'string');
+let notStrings = start.filter(v => typeof(v) !== 'string');
+let sortedNotStrings = notStrings.sort((a, b) => a > b);
+let grouped = sortedNotStrings.reduce((acc, value) => {
+    /*   if(acc.length > 0)
+      {
+        if(acc[0][0] === value)
+        {
+          acc[0].push(value);
+        }
+        else
+        {
+          acc.unshift([value]);
+        }
+      }
+      else
+      {
+        acc.unshift([value]);
+      }
+      return acc; */
+
+    if (acc.length > 0 && acc[0][0] === value) {
+        acc[0].push(value)
+    } else {
+        acc.unshift([value]);
+
+    }
+    return acc
+
+
+
+
+}, []);
+
+let sortedGrouped = grouped.sort((g1, g2) => g1[0] > g2[0]);
+let withStrings = [sortedGrouped, strings];
+
+console.log(withStrings);
+
+let lonelySingleItems = sortedGrouped.map(arr => arr.length > 1 ? arr : arr[0]);
+
+console.log([lonelySingleItems, strings]);
