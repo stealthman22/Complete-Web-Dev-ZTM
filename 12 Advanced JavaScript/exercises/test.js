@@ -8,3 +8,31 @@ Question 2: Write a javascript function that takes an array of numbers and a tar
 Question 3: Write a function that converts HEX to RGB. Then Make that function auto-dect the formats so that if you enter HEX color format it returns RGB and if you enter RGB color format it returns HEX.
 
 */
+
+
+// Sol 1
+
+let roughArray = [1, 2, 4, 591, 392, 391, 2, 5, 10, 2, 1, 1, 1, 20, 20];
+
+/* function sortArray() {
+    roughArray.map(num => {
+        if (num[i] > 1) {
+            roughArray.reduce((acc, num) => {
+                return acc.concat(num)
+            }, [])
+        }
+    })
+
+} */
+
+/* 
+const cleanArray = roughArray.reduce((acc, num) => {
+    let i = acc.findIndex(num);
+    if (i) {
+        return acc.concat(num);
+    }
+}, [])
+cleanArray(); */
+
+
+const cleanArray = roughArray.reduce((acc, num, index, ))
