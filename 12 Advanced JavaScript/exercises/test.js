@@ -97,22 +97,16 @@ let strings = start.filter(v => typeof(v) === 'string');
 let notStrings = start.filter(v => typeof(v) !== 'string');
 let sortedNotStrings = notStrings.sort((a, b) => a > b);
 let grouped = sortedNotStrings.reduce((acc, value) => {
-    /*   if(acc.length > 0)
-      {
-        if(acc[0][0] === value)
-        {
-          acc[0].push(value);
+    if (acc.length > 0) {
+        if (acc[0][0] === value) {
+            acc[0].push(value);
+        } else {
+            acc.unshift([value]);
         }
-        else
-        {
-          acc.unshift([value]);
-        }
-      }
-      else
-      {
+    } else {
         acc.unshift([value]);
-      }
-      return acc; */
+    }
+    return acc;
 
     if (acc.length > 0 && acc[0][0] === value) {
         acc[0].push(value)
