@@ -50,3 +50,34 @@ Promise.all(urls.map(url =>
     })
     .catch(err => console.log('ughhhh fix it!', err))
     .finally(data => console.log('extra data'));
+
+
+// for await of
+
+const urls = [
+    'https://jsonplaceholder.typicode.com/users',
+    'https://jsonplaceholder.typicode.com/posts',
+    'https://jsonplaceholder.typicode.com/albums'
+]
+
+// for of loop
+const loopUrls = () => {
+    for (url of urls) {
+        console.log(url)
+    }
+}
+
+function loopUrls() {
+    for (url of urls) {
+        console.log(url)
+    }
+}
+
+
+// for await of loop for arrays of promises
+const getData2 = async function() {
+    const arrayOfPromises = urls.map(url => fetch(url));
+    for await (let request of arrayOfPromises) {
+        const data = await request.json()
+    }
+}
