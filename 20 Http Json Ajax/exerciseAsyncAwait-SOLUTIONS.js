@@ -21,19 +21,19 @@ const urls = [
   'https://jsonplaceholder.typicode.com/albums'
 ]
 
-const getData = async function() {
-  const [ users, posts, albums ] = await Promise.all(urls.map(url =>
-      fetch(url).then(resp => resp.json())
+const getData = async function () {
+  const [users, posts, albums] = await Promise.all(urls.map(url =>
+    fetch(url).then(resp => resp.json())
   ));
   console.log('users', users);
   console.log('posta', posts);
   console.log('albums', albums);
 }
 
-const getData = async function() {
-  const [ users, posts, albums ] = await Promise.all(urls.map(async function(url) {
-      const response = await fetch(url);
-      return response.json();
+const getData = async function () {
+  const [users, posts, albums] = await Promise.all(urls.map(async function (url) {
+    const response = await fetch(url);
+    return response.json();
   }));
   console.log('users', users);
   console.log('posta', posts);
@@ -42,16 +42,16 @@ const getData = async function() {
 
 // #3) Add a try catch block to the #2 solution in order to catch any errors.
 // Now chnage one of the urls so you console.log your error with 'ooooooops'
-const getData = async function() {
+const getData = async function () {
   try {
-    const [ users, posts, albums ] = await Promise.all(urls.map(async function(url) {
-        const response = await fetch(url);
-        return response.json();
+    const [users, posts, albums] = await Promise.all(urls.map(async function (url) {
+      const response = await fetch(url);
+      return response.json();
     }));
     console.log('users', users);
     console.log('posta', posts);
     console.log('albums', albums);
   } catch (err) {
-    console.log('ooooooops', err);
+    console.log('oops', err);
   }
 }
