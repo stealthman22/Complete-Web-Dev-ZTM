@@ -1,3 +1,6 @@
+
+// This is Andrei's work
+
 // Object spread operator
 const animals = {
     tiger: 23,
@@ -40,8 +43,8 @@ const urls = [
 ]
 
 Promise.all(urls.map(url =>
-        fetch(url).then(people => people.json())
-    ))
+    fetch(url).then(people => people.json())
+))
     .then(array => {
         console.log('1', array[0])
         console.log('2', array[1])
@@ -75,7 +78,7 @@ function loopUrls() {
 
 
 // for await of loop for arrays of promises
-const getData2 = async function() {
+const getData2 = async function () {
     const arrayOfPromises = urls.map(url => fetch(url));
     for await (let request of arrayOfPromises) {
         const data = await request.json()
