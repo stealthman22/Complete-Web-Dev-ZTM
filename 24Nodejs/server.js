@@ -9,7 +9,7 @@ const server = http.createServer((request, response) => {
         hobby: 'Skating'
     }
 
-    // Sertting json as the content type
+    // Setting json as the content type
     response.setHeader('Content-Type', 'application/json');
     response.end(JSON.stringify(user));
 })

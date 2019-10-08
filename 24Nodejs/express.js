@@ -8,10 +8,10 @@ const app = express();
 
 // Get request with express
 app.get('/', (req, res) => {
-    const user {
+    const user = {
         name: 'Sally',
         hobby: 'Soccer'
-   }
+    }
     res.send(user)
 });
 app.listen(3000);
