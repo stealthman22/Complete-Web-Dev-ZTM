@@ -3,7 +3,7 @@ const express = require('express')
 const app = express();
 
 app.use((req, res, next) => {
-    console.log('<h1>HELLO </h1>')
+    console.log('<h1>HELLO</h1>')
     next()
 })
 

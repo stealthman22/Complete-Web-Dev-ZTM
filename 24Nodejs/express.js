@@ -1,25 +1,33 @@
 // Building express server
 
-const express = require('express'),
+const express = require('express');
+const bodyParser = require('body-parser');
 
-    app = express();
+const app = express();
 
 
 
 
 app.post('/profile', (req, res) => {
+    // middleware
+
+    app.use(bodyParser.urlencoded({ extended: false }));
+
     const user = {
-        name: 'Sally',
+        name: 'Bally',
         hobby: 'Soccer'
     }
+    console.log(req.body);
     res.send(user)
+
 });
 
 
 
 
 // Get request with express
-app.get('/', (req, res) => {
+app.post('/', (req, res) => {
+
     const user = {
         name: 'Sally',
         hobby: 'Soccer'
@@ -38,5 +46,5 @@ app.get('/profile', (req, res) => {
 });
 
 
-app.listen(3000);
+app.listen(3020);
 
