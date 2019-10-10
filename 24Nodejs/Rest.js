@@ -1,7 +1,7 @@
 // Building express server
 
 const express = require('express');
-const bodyParser = require('body-parser');
+const bodyParser = require('body-parser/index');
 
 const app = express();
 
@@ -11,28 +11,14 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // for json
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => {
-
+app.get('/:id', (req, res) => {
     // requests 
-    console.log(req.query())
+    //console.log(req.query);
     //req.body()
-    //req.header()
-    //req.params()
-
-
-    res.send('getting root')
+    // console.log(req.headers);
+    console.log(req.params)
+    res.status(404).send('not found');
 });
 
-
-// Get request with express
-app.post('/profile', (req, res) => {
-    console.log(req.body);
-    const user = {
-        name: 'Bally',
-        hobby: 'Soccer'
-    }
-    res.send(user);
-});
-
-app.listen(3000);
+app.listen(3020);
 
