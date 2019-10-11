@@ -1,4 +1,4 @@
-// Push results of forEach into a new array
+/* // Push results of forEach into a new array
 
 const array = [1, 2, 3, 10, 16];
 // Placeholder array
@@ -22,8 +22,9 @@ console.table('map', mapArray);
 // filter
 
 const filterArray = array.filter(num => num > 5);
-console.table('filter', filterArray);
+console.table('filter', filterArray); */
 
+const array = [1, 2, 3, 10, 16];
 // reduce
 // takes in an accumulator and then the param
 const reduceArray = array.reduce((accumulator, num) => {
