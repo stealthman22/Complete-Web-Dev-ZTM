@@ -1,15 +1,8 @@
 const fs = require('fs');
 
-/* const advent = fs.readFile('./input.txt', (err, data) => {
-    console.time('elapse')
-    if (err) {
-        console.log('You are doing it wrong')
-    }
-    console.log(data.toString())
-    console.timeEnd('elapse')
-}) */
 
-// House the function into a variable
+console.time('advent')
+    // House the function into a variable
 const advent = fs.readFileSync('./input.txt').toString();
 //console.log(advent);
 
@@ -19,14 +12,16 @@ const adventArray = [...advent];
 //console.log(adventArray);
 
 const sumAdvent = adventArray.reduce((acc, param) => {
+
     if (param === '(') {
         return acc + 1;
     } else {
         return acc - 1
     };
 
+
 }, 0)
+console.timeEnd('advent')
 
 console.log(sumAdvent)
-
-theo
+console.timeEnd('advent')
