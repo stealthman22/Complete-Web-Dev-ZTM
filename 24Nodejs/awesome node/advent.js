@@ -29,23 +29,4 @@ const sumAdvent = adventArray.reduce((acc, param) => {
 
 console.log(sumAdvent)
 
-/* const sumAdvent = adventArray.map(param => {
-    if (param === '(') {
-        param + 1;
-    }
-    ;
-}) */
-
-
-/* const sumAdvent = adventArray.reduce((acc, param) => {
-    if (param === '(') {
-        acc + 1
-    } else if (param === ')') {
-        acc - 1
-    }
-
-    return acc + param;
-
-}, 0)
-
-console.log(sumAdvent); */
+theo
