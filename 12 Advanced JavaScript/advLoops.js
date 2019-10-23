@@ -25,9 +25,7 @@ for (item of basket) {
 
 // for in loop
 
-
-
-
+// Fast loop for objects
 for (item in detailedBaskets) {
     console.log(item);
 }
@@ -36,7 +34,7 @@ for (item in detailedBaskets) {
 // It allows us to see the properties
 
 
-/* 
+/*
 iterating: Going one by one around items in an iterable (strings and arrays)
 
 enumerating: enumerate over an enumerable (objects).
