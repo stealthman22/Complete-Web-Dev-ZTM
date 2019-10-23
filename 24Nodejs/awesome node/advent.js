@@ -16,7 +16,7 @@ const sumAdvent = adventArray.reduce((acc, param, index) => {
         if (acc === -1) {
             console.log(acc, index)
         }
-        // Evaluates the first part
+        // Evaluates the first part, it outputs last because it is a total loop
         if (param === '(') {
             return acc + 1;
         } else if (param === ')') {
