@@ -31,18 +31,18 @@ function sing(song) {
 sing('lalal lalalla');
 sing('waooooooooooo'); */
 
-/* function multiply(a, b) {
-       if (a > 10 || b > 10) {
-            return 'that is too hard';
-        } else {
-            return a * b;
-        } 
+function multiply(a, b) {
+    if (a > 10 || b > 10) {
+        return 'that is too hard';
+    } else {
+        return a * b;
+    }
 
     return a * b;
 
 }
 
-alert(multiply(3, 4)); */
+alert(multiply(3, 4));
 
 
 
@@ -55,7 +55,7 @@ var mixedList = [
     ['tiger', 'cat', 'bear', 'bird']
 ];
 
-console.log(mixedList[0][3]); */
+console.log(mixedList[0][3]); 
 
 // Objects
 
