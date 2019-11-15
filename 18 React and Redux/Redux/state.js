@@ -1,1 +1,5 @@
-const state = 'redux';
+/*
+Will work with the robofriends app again
+To learn the intricacies of reduc
+In a different folder
+*/
